@@ -99,6 +99,7 @@ var Configuration = map[string]PathConfig{
 	"nproc":    Allowed,
 	"openssl":  Allowed,
 	"patch":    Allowed,
+        "perl":     Log,
 	"pstree":   Allowed,
 	"python3":  Allowed,
 	"python3.6": Allowed,
@@ -120,6 +121,8 @@ var Configuration = map[string]PathConfig{
 	"pkg-config": Allowed,
 	"clang":      Allowed,
 	"as":         Allowed,
+        "flex":     Allowed,
+	"bison":    Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
